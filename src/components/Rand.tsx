@@ -1,6 +1,6 @@
 'use client';
 
-import { ButtonHTMLAttributes, DetailedHTMLProps, LegacyRef, MutableRefObject, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 
 export default function Rand() {
   const [one, setOne] = useState<string>('30');
