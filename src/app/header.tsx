@@ -22,6 +22,7 @@ export default Header;
 
 const HeaderDiv = styled.div`
   position: sticky;
+  z-index: 999;
   width: 100vw;
   height: 100px;
 
