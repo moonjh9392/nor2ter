@@ -2,11 +2,14 @@
   "name": "nor2ter",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://hhyemi.github.io/nor2ter",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "build": "next build && next export",
+    "predeploy": "npm run build",
+    "deploy": "touch out/.nojekyll && gh-pages -d out --dotfiles"
   },
   "dependencies": {
     "@next/font": "13.1.6",
@@ -23,6 +26,7 @@
     "typescript": "4.9.5"
   },
   "devDependencies": {
-    "@types/styled-components": "^5.1.26"
+    "@types/styled-components": "^5.1.26",
+    "gh-pages": "^5.0.0"
   }
 }
